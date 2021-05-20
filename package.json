@@ -3,7 +3,6 @@
     "name"         : "node-red-apprunner",
     "version"      : "0.0.1",
     "dependencies": {
-        "node-red": "1.x.x",
-        "node-red-dashboard": "*"       
+        "express": "4.17.1"  
     }
 }
