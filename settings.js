@@ -18,7 +18,7 @@ var path = require("path");
 var when = require("when");
 
 var settings = module.exports = {
-    uiPort: 1880,
+    uiPort: 8080,
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
     debugMaxLength: 10000000,
