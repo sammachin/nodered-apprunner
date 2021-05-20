@@ -5,6 +5,5 @@ build:
     build:
     - npm install
 run:
-  command:  node  node_modules/node-red/red.js --settings ./settings.js
-  network:
+  command:  node  node_modules/node-red/red.js 
     port: 1880
