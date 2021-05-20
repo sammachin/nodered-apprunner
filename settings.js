@@ -18,7 +18,7 @@ var path = require("path");
 var when = require("when");
 
 var settings = module.exports = {
-    uiPort: process.env.PORT || 1880,
+    uiPort: 1880,
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
     debugMaxLength: 10000000,
@@ -26,7 +26,7 @@ var settings = module.exports = {
     // Add the nodes in
     nodesDir: path.join(__dirname,"nodes"),
 
-    // Blacklist the non-bluemix friendly nodes
+    // Blacklist the non friendly nodes
     nodesExcludes:[ '75-exec.js','35-arduino.js','36-rpi-gpio.js','25-serial.js','28-tail.js','50-file.js','31-tcpin.js','32-udp.js','23-watch.js' ],
 
     // Enable module reinstalls on start-up; this ensures modules installed
@@ -34,7 +34,7 @@ var settings = module.exports = {
     autoInstallModules: true,
 
     // Move the admin UI
-    httpAdminRoot: '/red',
+    httpAdminRoot: '/admin',
 
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
