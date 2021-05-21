@@ -3,6 +3,7 @@
     "name"         : "node-red-apprunner",
     "version"      : "0.0.1",
     "dependencies": {
-        "express": "4.17.1"  
+        "express": "4.17.1",
+        "express-ws" : "4.0.0"  
     }
 }
